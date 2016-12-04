@@ -1,0 +1,5 @@
+<%= form_for @product do |f| %>
+  <%= f.cropbox :image %>
+  <%= f.previewbox :image, width: 200, height: 200 %>
+  <%= f.submit 'Crop' %>
+<% end %>
